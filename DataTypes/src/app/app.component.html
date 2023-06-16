@@ -1,0 +1,28 @@
+<h1>DATA TYPES</h1>
+RollNo = {{rollno}}<br>
+Name = {{name}}<br>
+Status = {{status}}<br>
+Address = {{addr}}<br>
+
+{{arr}}<br>
+<div *ngFor="let x of arr">
+    {{x}}  
+</div>
+
+{{starr}}<br>
+<div *ngFor="let s of starr">
+  {{s}}
+</div>
+
+<h2 align="center">Student Details</h2>
+<table border="2" align="center">
+    <th>ID</th>
+    <th>Student Name</th>
+    <th>Address</th>
+    <tr *ngFor="let stud of stuarray">
+        <td>{{stud.id}}</td>
+        <td>{{stud.sname}}</td>
+        <td>{{stud.addr}}</td>
+    </tr>
+
+</table>
